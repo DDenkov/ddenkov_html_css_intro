@@ -1,0 +1,7 @@
+{
+    "animals":[
+        { "name":"Dolphin", "live":"water" },
+        { "name":"Chicken", "live":"ground" },
+        { "name":"Varan", "live":"water and on the ground"}
+    ]
+}

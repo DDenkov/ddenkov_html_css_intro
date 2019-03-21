@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <!--Да се направи калкулатор на JavaScript за смятане на цели числа.
+            Трябва да има графичен интерфейс и следните функции:
+                
+                -Поле за числото (въвеждането на числото става само,
+                чрез натискане на бутон от интерфейса, не от клавиатурата;
+                -Бутони с цифрите от 0 до 9;
+                -Бутони с възможните операции: +, -, *, /, = ;
+                -Бутон за изтриване на последната въведена цифра;
+                -Бутон за изчистване на цялото поле.
+                Забележка: Всички страници трябва да изпозват външен CSS файл,
+                в който да се дефинират:
+                -цветовете на линковете във всичките им възможни състояния;
+                -цвят на фона;
+                -изглед на таблиците, полетата, бутоните и т. н.
+                -->
+        <div>
+			<table class="calculator">
+				<tr>
+                    <td><input type="text" id="input" readonly="readonly">
+                </td>
+				</tr>
+				<tr>
+                    <td>
+                        <input class="operator" type="button" value="+" onclick="getOperator('+')">
+                        <input class="operator" id="minus" type="button" value="-" onclick="getOperator('-')">
+                        <input class="operator" id="backSpace" type="button" value="&#8592" onclick="backSpace()">
+                        <br /><br />
+                        <input class="operator" type="button" value="*" onclick="getOperator('*')">
+                        <input class="operator" id="division" type="button" value="/" onclick="getOperator('/')">
+                        <input class="operator" type="button" value="C" onclick="clearField()">
+                        <br /><br />
+                        <input class="button" type="button" value="1" onclick="getNumber(1)">
+                        <input class="button" type="button" value="2" onclick="getNumber(2)">
+                        <input class="button" type="button" value="3" onclick="getNumber(3)">
+                        <br /><br />
+                        <input class="button" type="button" value="4" onclick="getNumber(4)">
+                        <input class="button" type="button" value="5" onclick="getNumber(5)">
+                        <input class="button" type="button" value="6" onclick="getNumber(6)">
+                        <br /><br />
+                        <input class="button" type="button" value="7" onclick="getNumber(7)">
+                        <input class="button" type="button" value="8" onclick="getNumber(8)">
+                        <input class="button" type="button" value="9" onclick="getNumber(9)">
+                        <br /><br />
+                        <input class="button" type="button" value="0" onclick="getNumber(0)">
+                        <input class="operator" id="equal" type="button" value="=" onclick="calculate()">
+                    </td>
+				</tr>
+			</table>
+        </div>
+
+    <link rel="stylesheet" type="text/css" href="Task_4.css">
+    <script type="text/javascript" src="Task_4.js"></script>
+    </body>
+</html>

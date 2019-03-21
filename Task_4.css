@@ -1,0 +1,98 @@
+.calculator {
+    padding: 10px 10px 10px 10px;
+}
+#input {
+    background-color: rgba(245, 241, 228, 0.404);
+    width: 82%;
+    height: 26px;
+    border: 0px;
+    box-shadow: 0 3px 6px 0 rgba(223, 44, 44, 0.24), 0 10px 10px 0 rgba(63, 75, 145, 0.19);    
+    margin: 0 0 10px 5px;
+    padding-top: 10px;
+    margin-left: 15px;
+}
+#minus {
+    padding-right: 20px;
+}
+#division {
+    padding-right: 23px;
+}
+#equal {
+    padding-right: 83px;
+}
+body {
+    background-color: snow;
+}
+table {
+    background-color: rgba(65, 105, 225, 0.5);
+    margin: 160px 0 0 800px; 
+    min-width: 13%;
+    border-radius: 35px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 3px 6px 0 rgba(223, 44, 44, 0.24), 0 10px 10px 0 rgba(63, 75, 145, 0.19); 
+}
+.button {
+    margin-left: 10px;
+    color: black;
+    padding: 5px 20px;
+    background-color:  rgba(29, 211, 211, 0.562);
+    cursor: pointer;
+    border: solid 1px;
+    border-color: khaki;
+    transition-duration: 230ms;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
+}
+.button:hover {
+    border-color: rgb(240, 140, 140);
+    background-color:rgba(92, 196, 51, 0.795);;
+    color: black;
+}
+.button:active {
+    border-color: rgb(187, 109, 109);
+    box-shadow: 0 6px rgba(5, 96, 124, 0.247);
+    transform: translateY(6px);
+}
+.backspace {
+    margin-left: 6px;
+    width: 50px;
+    color: black;
+    padding: 5px 20px;
+    background-color:  rgba(29, 211, 211, 0.562);
+    cursor: pointer;
+    border: solid 1px;
+    border-color: khaki;
+    transition-duration: 230ms;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
+}
+.operator {
+    margin-left: 10px;
+    color: black;
+    padding: 5px 20px;
+    background-color:  rgba(29, 211, 211, 0.562);
+    cursor: pointer;
+    border: double 1px;
+    border-color: khaki;
+    transition-duration: 230ms;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
+}
+.operator:hover {
+    border-color: rgb(240, 140, 140);
+    background-color:rgba(92, 196, 51, 0.795);;
+    color: black;
+}
+.operator:active {
+    border-color: rgb(187, 109, 109);
+    box-shadow: 0 6px rgba(5, 96, 124, 0.247);
+    transform: translateY(6px);
+}

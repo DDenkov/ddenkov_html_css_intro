@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!--Използвайте примерни теми за задачи 6 и 7, с които да подобрите визуализацията на потребителския
+    интерфейс или разработете собствен дизайн конкурентен на bootstrap.
+-->
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Task_7.css">
+    </head>
+    <body>
+            <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="Task_7.html">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Support</a>
+                    </li>
+                  </ul> 
+        <div class="group">
+            <form id="allForm" name="register" method="post" onsubmit="return formValidation()">
+                <fieldset class="fieldSet">
+                    <legend>Registration Form</legend>
+                    <div class="field">
+                        <label for="fName">First name: </label> <br />
+                        <input class="form-control new" type="text" id="fName" name="fName" maxlength="15"
+                        placeholder="First Name" required> <br />
+                    </div>
+                    <div class="field">
+                        <label for="lName">Last name: </label> <br />
+                        <input class="form-control new" type="text" id="lName" name="lName" maxlength="15"
+                        placeholder="Last Name" required> <br />
+                    </div>
+                    <div class="field">
+                        <label for="egn">EGN: </label> <br />
+                        <input class="form-control new" type="text" id="egn" name="egn" placeholder="EGN"
+                        minlength="10" required> <br />
+                    </div>
+                    <div class="field">
+                        <label for="age">Age: </label> <br />
+                        <input class="form-control new" type="number" id="age" name="age" min="18" max="118"
+                        placeholder="Age"> <br />
+                    </div>
+                    <span>
+                            <img class="image" src="registration.png" alt="Registration page image" width="50%">
+                    </span>
+                    <div class="field">
+                        <label for="address">Address: </label> <br />
+                        <input class="form-control new" type="text" id="address" name="address" placeholder="Address"
+                        maxlength="100" required> <br />
+                    </div>
+                    <div class="field">
+                        <label for="password">Password: </label> <br />
+                        <input class="form-control new" type="password" id="password" name="password" placeholder="Password"
+                        minlength="6" maxlength="18" required> <br />
+                    </div>
+                    <div class="field">
+                        <label for="confirmPassword">Confirm password: </label> <br />
+                        <input class="form-control new" type="password" id="confirmPassword" name="confirmPassword"
+                        placeholder="Confirm Password" minlength="6" maxlength="18" required> <br />
+                    </div>
+                    <div class="field">
+                        <input class="new btnSubmit" type="submit" value="Submit"></button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <script src="Task_7.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+    </body>
+
+</html>

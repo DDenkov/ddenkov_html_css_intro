@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="Task_6.css">
+    </head>
+    <body>
+        <!--Използвайте примерни теми за задачи 6 и 7, с които да подобрите визуализацията на потребителския
+            интерфейс или разработете собствен дизайн конкурентен на bootstrap.
+                -->
+    <div class="container">
+        <div class="calculator">
+			<table class="table table-borderless">
+                    <header>Calculator</header>
+                <thead>
+				<tr>
+                    <th class="table-success"><input type="text" id="input" readonly="readonly"></th>
+                </tr>
+                </thead>
+				<tr>
+                    <td class="table">
+                        <input class="btn-operator" type="button" value="+" onclick="getOperator('+')">
+                        <input class="btn-operator" id="xl" type="button" value="-" onclick="getOperator('-')">
+                        <input class="btn-operator" id="sm" type="button" value="&#8592" onclick="backSpace()">
+                        <input class="btn-operator" id="md" type="button" value="C" onclick="clearField()">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table">
+                        <input class="btn-operator" id="lg" type="button" value="*" onclick="getOperator('*')">
+                        <input class="btn-operator" id="xl" type="button" value="/" onclick="getOperator('/')">
+                        <input class="btn-operator" type="button" value="0" onclick="getNumber(0)">
+                        <input class="btn-operator" type="button" value="1" onclick="getNumber(1)">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table">
+                        <input class="btn-operator" type="button" value="2" onclick="getNumber(2)">
+                        <input class="btn-operator" type="button" value="3" onclick="getNumber(3)">
+                        <input class="btn-operator" type="button" value="4" onclick="getNumber(4)">
+                        <input class="btn-operator" type="button" value="5" onclick="getNumber(5)">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table">
+                        <input class="btn-operator" type="button" value="6" onclick="getNumber(6)">
+                        <input class="btn-operator" type="button" value="7" onclick="getNumber(7)">
+                        <input class="btn-operator" type="button" value="8" onclick="getNumber(8)">
+                        <input class="btn-operator" type="button" value="9" onclick="getNumber(9)">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table">
+                        <input class="btn-operator" id="equal" type="submit" value="=" onclick="calculate()">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="Task_6.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

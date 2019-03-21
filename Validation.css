@@ -1,0 +1,22 @@
+form {
+    padding: 30px 800px;
+    text-align: center;
+    }
+
+.new {
+        border-radius: 35px;
+    margin-top: 5px; 
+    padding: 8px;
+    }
+
+
+
+.fset {
+        background: rgba(114, 93, 206, 0.144);
+        border-radius: 50px;
+    padding: 60px;
+    }
+
+body {
+    background: rgba(0, 191, 255, 0.048);
+}

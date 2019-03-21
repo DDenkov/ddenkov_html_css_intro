@@ -1,0 +1,116 @@
+/**
+ * Improvement the preview of the UI of Task_3
+ */
+
+.group {
+    display: inline-block;
+    position: relative;
+    width: 60%;
+    z-index: 1;
+    text-align: center;
+}
+.field:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 10px 0 0 20px;
+    color: #21538e;
+}
+.field {
+    color: #21538e;
+}
+.new {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 220px;
+    border-radius: 35px;
+    padding: 6px;
+    vertical-align: middle;
+    text-align: center;
+    color: #21538e;
+}
+body {
+    background-image: radial-gradient(#bbcfe8, #bed2eb);
+}
+input[type=text] {
+    width: 40%;
+    padding: 6px;
+    margin: 3px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4%;
+    color: #21538e;
+    box-sizing: border-box;
+}
+input[type=number] {
+    width: 40%;
+    padding: 6px;
+    margin: 3px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4%;
+    box-sizing: border-box;
+    color: #21538e;
+}
+input[type=password] {
+    width: 40%;
+    padding: 6px;
+    margin: 3px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4%;
+    box-sizing: border-box;
+    color: #21538e;
+}
+input[type=submit] {
+    padding: 0.4rem 0.8rem;
+    margin-top: 1.8rem;
+    cursor: pointer;
+    background-color:  #21538e;
+    color: #e4e3f3;
+    border-color: #21538e;
+    transition-duration: 130ms;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
+}
+input[type=submit]:hover {
+    background-color:  #21538e;
+    color: #e4e3f3;
+    border-color: #21538e;
+}
+input[type=submit]:active {
+    background-color:  #21538e;
+    color: #e4e3f3;
+    border-color: #21538e;
+    transform: translateY(1px);
+}
+legend {
+    visibility: hidden;
+}
+img {
+    display: inline;
+    position: fixed;
+    margin: -290px 200px;
+    z-index: -1;
+}
+@media screen and (max-width: 990px) {
+    img.image {
+    display: none;
+  }
+    div.group {
+        width: 40rem;
+    }
+    input.btnSubmit {
+        width: 11rem;
+    }
+}
+@media screen and (max-width: 460px) {
+    div.group {
+        width: 26rem;
+    }
+    input.btnSubmit {
+        width: 6rem;
+    }
+}

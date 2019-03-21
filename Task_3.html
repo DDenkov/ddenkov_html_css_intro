@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!--
+Да се направи HTML страница съдържаща форма за въвеждане на данни за
+потребител (first name, last name, EGN , age, address, password,
+confirm password) и да се извършат следните JavaScript (client side) валидации:
+
+    first name - от 1 до 15 символа
+    lastname - от 1 до 15 символа
+    EGN- точно 10 цифри
+    аge- от 18 до 118
+    address- от 1 до 100 символа
+    password- от 6 до 18 символа и съдържа само латински букви и цифри.
+-->
+<html>
+    <body>
+
+        <form name="register" method="post" onsubmit="return formValidation()">
+
+            <fieldset class="fset">
+            <legend>Registration Form</legend>
+
+            <label>First name: </label>
+            <input class="new" type="text" name="fName"> <br />
+
+            <label>Last name: </label>
+            <input class="new" type="text" name="lName"> <br />
+
+            <label>EGN: </label>
+            <input class="new" type="text" name="egn"> <br />
+
+            <label>Age: </label>
+            <input class="new" type="number" name="age"> <br />
+
+            <label>Address: </label>
+            <input class="new" type="text" name="address"> <br />
+
+            <label>Password: </label>
+            <input class="new" type="password" name="password"> <br />
+
+            <label>Confirm password: </label>
+            <input class="new" type="password" name="confirmPassword"> <br />
+
+            <input class="new" type="submit" value="Submit"></button>
+            </fieldset>
+
+        </form>
+
+        <link rel="stylesheet" type="text/css" href="Validation.css">
+        <script src="Validation.js"></script>
+    </body>
+
+</html>
