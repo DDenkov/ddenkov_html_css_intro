@@ -5,7 +5,7 @@
  */
 
 function isFraction(str) {
-  var regEx = /(-?\d\d?\d?\d?\d?(\.?|,?)\d?\d?\d?\d?\d?)/g;
+  var regEx = /(-?[0-9]{0,5}(\,|\.?)[0-9]{0,5})/g;
   var isValid;
   isValid = regEx.test(str);
   return isValid;
